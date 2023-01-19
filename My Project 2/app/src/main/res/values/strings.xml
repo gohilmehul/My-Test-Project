@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">My Project</string>
+    <string name="sign_in">Sign In</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="submit">Log In</string>
+    <string name="name">Name:-</string>
+    <string name="dose">Dose:-</string>
+    <string name="strength">Strength:-</string>
+    <string name="detail">Details Activity</string>
+    <string name="home">Home Activity</string>
+    <string name="offline_data">Offline Data</string>
+
+
+</resources>

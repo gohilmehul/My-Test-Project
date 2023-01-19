@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+
+    tools:context=".Activity.OffLineActivity">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        tools:listitem="@layout/associated_drug_layout"/>
+
+    <RelativeLayout
+        android:id="@+id/frame_loading"
+        android:layout_width="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/processbar_shape"
+        android:visibility="visible">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:theme="@style/ProgressBarStyle_a" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

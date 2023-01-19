@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/LoginActivity">
+
+
+    <fragment
+        android:id="@+id/detailsactivity"
+        android:name="com.example.myproject.Activity.DetailsActivity"
+        android:label="activity_details"
+        tools:layout="@layout/activity_details"></fragment>
+
+    <fragment
+        android:id="@+id/activity_home"
+        android:name="com.example.myproject.Activity.HomeActivity"
+        android:label="activity_home"
+        tools:layout="@layout/activity_home">
+        <action
+            android:id="@+id/action_detailsactivity_to_onlineFragment"
+            app:destination="@id/detailsactivity" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/offlineactivity"
+        android:name="com.example.myproject.Activity.OffLineActivity"
+        android:label="activity_offline">
+
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/LoginActivity"
+        android:name="com.example.myproject.Activity.LoginActivity"
+        android:label="activity_logins"
+        tools:layout="@layout/activity_logins">
+        <action
+            android:id="@+id/action_homeFragment_to_onlineFragment"
+            app:destination="@id/activity_home" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_offlineactivity"
+            app:destination="@id/offlineactivity" />
+
+    </fragment>
+</navigation>
